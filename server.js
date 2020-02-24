@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const mongoose = require('mongoose')
-mongoose.connect(process.env.MLAB_URI || "mongodb+srv://jsadler:Davetab_97148812@cluster0-udsje.mongodb.net/url?retryWrites=true&w=majority", { useUnifiedTopology: true, useNewUrlParser: true })
+mongoose.connect(process.env.MLAB_URI, { useUnifiedTopology: true, useNewUrlParser: true })
 var Schema = mongoose.Schema;
 var userSchema = new Schema({
   userName: String
